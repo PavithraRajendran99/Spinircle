@@ -13,4 +13,4 @@ jobs:
           persist-credentials: true
 
       - name: Install 🔧
-        run: git log -- C:\Users\842183\Desktop\TLM\pavithra_resume_task\logcheck.csv
+        run: git log -- https://github.com/PavithraRajendran99/Spinircle/tree/master/.github/workflows\logcheck.csv
