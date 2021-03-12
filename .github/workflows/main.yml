@@ -1,16 +1,22 @@
-name: Node CI
+name: Java CI
 
-on: push
+on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: windows-latest
+
+    runs-on: Windows
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: true
-
-      - name: Install 🔧
-        run: git bugreport
+    - uses: actions/checkout@v1
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build core and unit test with gradle
+      run: cd core && ./gradlew build
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: ChkBugReport
+        path: core/build/distributions/ChkBugReport.tar
