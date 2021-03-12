@@ -4,13 +4,13 @@ on: push
 
 jobs:
   build:
-    runs-on: windows
+    runs-on: windows-latest
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
-          persist-credentials: true
+          persist-credentials: false
 
       - name: Install 🔧
         run: git log -- https://github.com/PavithraRajendran99/Spinircle/tree/master/.github/workflows\logcheck.csv
