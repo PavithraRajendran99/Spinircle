@@ -13,4 +13,4 @@ jobs:
           persist-credentials: false
 
       - name: Install 🔧
-        run: git log -- https://github.com/PavithraRajendran99/Spinircle/logcheck.txt
+        run: git log -- https://github.com/PavithraRajendran99/Spinircle/blob/master/report.txt
