@@ -13,4 +13,4 @@ jobs:
           persist-credentials: true
 
       - name: Install 🔧
-        run: git log --no-merges --since='mm-dd-yyyy' --pretty=format:%h,%an,%ae,%s > c:\desktop\history.csv
+        run: git log --no-merges --since='mm-dd-yyyy' --pretty=format:%h,%an,%ae,%s > https://github.com/PavithraRajendran99/Spinircle/blob/master/report.txt
