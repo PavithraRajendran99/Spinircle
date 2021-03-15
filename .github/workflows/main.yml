@@ -1,16 +1,18 @@
-name: Node CI
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: 'Owner of actions to retrieve'
+        required: true
 
-on: push
+name: Generate report
 
 jobs:
   build:
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: true
-
-      - name: Install 🔧
-        run: git log --no-merges --since='mm-dd-yyyy' --pretty=format:%h,%an,%ae,%s > report.txt
+    - uses: imjohnbo/workflow-reports-action@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        owner: PavithraRajendran99
