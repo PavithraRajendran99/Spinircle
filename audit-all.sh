@@ -18,7 +18,7 @@
 ######################################################################################
 # Constants
 ######################################################################################
-GIT_REPOS="C:\Users\PAVITHRA RAJENDRAN\Documents\GitHub\Spinircle"
+GIT_REPOS="https://github.com/PavithraRajendran99/Spinircle"
 OUTPUT="${GIT_REPOS}/report.html"
 SINCE="5.weeks"
 RIGHT_NOW=$(date +"%x %r %Z")
