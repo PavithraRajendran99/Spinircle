@@ -17,7 +17,7 @@ CSV_FILE=${REPOSITORY_NAME^^}_REPORT.csv
 HEADER="Hash;Comment;Status;File;Info;\n"
 
 ## Filters
-USER_FILTER="Paloma\|Claudino"
+USER_FILTER="PavithraRajendran99"
 COMMENT_FILTER=""
 
 ## Functions
