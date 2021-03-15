@@ -18,7 +18,7 @@
 ######################################################################################
 # Constants
 ######################################################################################
-GIT_REPOS="/c/git/UVA-Audit"
+GIT_REPOS="C:\Users\PAVITHRA RAJENDRAN\Documents\GitHub\Spinircle"
 OUTPUT="${GIT_REPOS}/report.html"
 SINCE="5.weeks"
 RIGHT_NOW=$(date +"%x %r %Z")
