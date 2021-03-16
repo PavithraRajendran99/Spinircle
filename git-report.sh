@@ -49,7 +49,7 @@ format_status() {
 		FORMATTED_LINE=${LINE//$STATUS_LETTER_04/Copied;}
 	elif [[ $STATUS_LETTER_05 == "R100;" ]]; then
 		FORMATTED_LINE=${LINE//$STATUS_LETTER_05/Renamed;}
-	elif [[ $STATUS_LETTER_02 =~ ^(A;|C;|D;|Modified;|R;|T;|U;|X;|B;) ]]; then
+	elif [[ $STATUS_LETTER_02 =~ ^(A;|C;|D;|M;|R;|T;|U;|X;|B;) ]]; then
 		case $STATUS_LETTER_02 in
 			"A;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Added;} ;;
 			"C;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Copied;} ;;
