@@ -66,6 +66,7 @@ format_status() {
 
 generate_lines() {
 	FORMATTED_LINE=""
+	DATE=""
 	CONTENT=""
 	COMMIT=""
 
@@ -73,7 +74,8 @@ generate_lines() {
 	do
 		format_status
 		if $NEW_LINE; then
-			GIT_USER="$USER_FILTER"
+			HASH="$USER_FILTER"
+			DATE=$(date +%Y-%m-%d:%H:%M:%S)
 			MSG=${LINE:41}
 			COMMIT="$MSG"
 			CONTENT="$COMMIT"
