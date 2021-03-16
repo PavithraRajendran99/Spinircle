@@ -73,7 +73,7 @@ generate_lines() {
 	do
 		format_status
 		if $NEW_LINE; then
-			USER_FILTER=${LINE:0:19}
+			HASH="$USER_FILTER"
 			MSG=${LINE:41}
 			COMMIT="$HASH;$MSG"
 			CONTENT="$COMMIT"
