@@ -18,6 +18,7 @@ HEADER="Name;Date&Time;Comment;Status;File;Info;\n"
 
 ## Filters
 USER_FILTER="PavithraRajendran99"
+GIT_USER=$(git config user.name);
 COMMENT_FILTER=""
 
 ## Functions
@@ -74,7 +75,7 @@ generate_lines() {
 	do
 		format_status
 		if $NEW_LINE; then
-			HASH="$USER_FILTER"
+			HASH="$GIT_USER"
 			
 			MSG=${LINE:41}
 			COMMIT="$HASH$MSG"
