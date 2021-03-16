@@ -78,7 +78,7 @@ generate_lines() {
 			HASH="$GIT_USER"
 			
 			MSG=${LINE:41}
-			COMMIT="$HASH$MSG"
+			COMMIT="$HASH;$MSG"
 			CONTENT="$COMMIT"
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
