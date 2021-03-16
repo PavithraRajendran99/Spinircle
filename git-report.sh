@@ -78,9 +78,9 @@ generate_lines() {
 		if $NEW_LINE; then
 			USER="$GIT_USER"
 			DATECH="$DATE"
-			DATECHECK="$DATE_U"
+			DATECHEC="$DATE_U"
 			MSG=${LINE:41}
-			COMMIT="$USER;$DATECH;$DATECHECK;$MSG"
+			COMMIT="$USER;$DATECH;$DATECHEC;$MSG"
 			CONTENT="$COMMIT"
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
