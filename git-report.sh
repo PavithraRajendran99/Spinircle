@@ -29,7 +29,7 @@ generate_git_log() {
 	#--grep		Limit the commits output to ones with reflog entries that match the specified pattern
 	#--reverse	Output the commits chosen to be shown in reverse order
 	#--name-status	Show only names and status of changed files	
-	git log --author=$USER_FILTER --grep=$COMMENT_FILTER --reverse --name-status --pretty=oneline > $TEMP_FILE
+	git log --author=$USER_FILTER --grep=$COMMENT_FILTER --reverse --name-status --date=format:'%Y-%m-%d %H:%M:%S' > $TEMP_FILE
 	
 	# replace tab to ;
 	cat $TEMP_FILE | tr "	" ";" > $GIT_LOG_FILE
@@ -100,7 +100,7 @@ generate_header
 generate_lines
 echo "Report generated successfully!" $CSV_FILE
 
-remove_files
+##remove_files
 
 exit 0
 ## FINISHED
