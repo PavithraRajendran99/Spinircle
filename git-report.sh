@@ -14,7 +14,7 @@ TEMP_FILE=TEMP_REPORT.txt
 GIT_LOG_FILE=GIT_LOG_REPORT.txt
 CSV_FILE=${REPOSITORY_NAME^^}_REPORT.csv
 # first line of csv file
-HEADER="Name;Comment;Status;File;Info;\n"
+HEADER="Name;Date&Time;Comment;Status;File;Info;\n"
 
 ## Filters
 USER_FILTER="PavithraRajendran99"
@@ -73,6 +73,7 @@ generate_lines() {
 	do
 		format_status
 		if $NEW_LINE; then
+			HASH="$USER_FILTER"
 			HASH="$USER_FILTER"
 			MSG=${LINE:41}
 			COMMIT="$HASH;$MSG"
