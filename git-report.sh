@@ -54,7 +54,7 @@ format_status() {
 			"A;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Added;} ;;
 			"C;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Copied;} ;;
 			"D;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Deleted;} ;;
-			"Modified;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Modified;} ;;
+			"M;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Modified;} ;;
 			"R;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Renamed;} ;;
 			"T;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Have their type (mode) changed;} ;;
 			"U;") FORMATTED_LINE=${LINE//$STATUS_LETTER_02/Unmerged;} ;;
