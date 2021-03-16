@@ -13,4 +13,4 @@ jobs:
           persist-credentials: true
 
       - name: Install 🔧
-        run: git log
+        run: git log --all
