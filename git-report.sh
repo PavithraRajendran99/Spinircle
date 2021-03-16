@@ -20,6 +20,7 @@ HEADER="Name;Date&Time;Comment;Status;File;Info;\n"
 USER_FILTER="PavithraRajendran99"
 GIT_USER=$(git config user.name);
 DATE=$(date +%Y-%m-%d:%H:%M:%S);
+DATE_U=$(git log -1 --format=%cd --date=format:%Y-%m-%d:%H:%M:%S);
 COMMENT_FILTER=""
 
 ## Functions
@@ -68,7 +69,6 @@ format_status() {
 
 generate_lines() {
 	FORMATTED_LINE=""
-	DATE=""
 	CONTENT=""
 	COMMIT=""
 
@@ -77,9 +77,10 @@ generate_lines() {
 		format_status
 		if $NEW_LINE; then
 			USER="$GIT_USER"
-			DATECHECK="$DATE"
+			DATECH="$DATE"
+			DATECHECK="$DATE_U"
 			MSG=${LINE:41}
-			COMMIT="$USER;$DATE;$MSG"
+			COMMIT="$USER;$DATECH;$DATECHECK;$MSG"
 			CONTENT="$COMMIT"
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
