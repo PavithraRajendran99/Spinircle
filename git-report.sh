@@ -29,6 +29,7 @@ generate_git_log() {
 	#--grep		Limit the commits output to ones with reflog entries that match the specified pattern
 	#--reverse	Output the commits chosen to be shown in reverse order
 	#--name-status	Show only names and status of changed files	
+	git rebase -i
 	git log --date=local --name-status> $TEMP_FILE
 	
 	# replace tab to ;
