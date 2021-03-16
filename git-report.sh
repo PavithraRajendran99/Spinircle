@@ -77,7 +77,7 @@ generate_lines() {
 			HASH="$USER_FILTER"
 			
 			MSG=${LINE:41}
-			COMMIT="$MSG"
+			COMMIT="$HASH$MSG"
 			CONTENT="$COMMIT"
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
