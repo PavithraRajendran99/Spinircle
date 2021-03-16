@@ -75,7 +75,7 @@ generate_lines() {
 		format_status
 		if $NEW_LINE; then
 			HASH="$USER_FILTER"
-			DATE=$(date +%Y-%m-%d:%H:%M:%S)
+			
 			MSG=${LINE:41}
 			COMMIT="$MSG"
 			CONTENT="$COMMIT"
