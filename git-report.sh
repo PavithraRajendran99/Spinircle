@@ -29,7 +29,7 @@ generate_git_log() {
 	#--grep		Limit the commits output to ones with reflog entries that match the specified pattern
 	#--reverse	Output the commits chosen to be shown in reverse order
 	#--name-status	Show only names and status of changed files	
-	git log  --author=$GIT_USER --name-status --date=format:'%Y-%m-%d %H:%M:%S'> $TEMP_FILE
+	git log  > $TEMP_FILE
 	
 	# replace tab to ;
 	cat $TEMP_FILE | tr "	" ";" > $GIT_LOG_FILE
