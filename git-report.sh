@@ -73,10 +73,9 @@ generate_lines() {
 	do
 		format_status
 		if $NEW_LINE; then
-			HASH="$USER_FILTER"
-			HASH="$USER_FILTER"
+			GIT_USER="$USER_FILTER"
 			MSG=${LINE:41}
-			COMMIT="$HASH;$MSG"
+			COMMIT="$MSG"
 			CONTENT="$COMMIT"
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
