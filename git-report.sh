@@ -32,6 +32,7 @@ generate_git_log() {
 	
 	git log --pretty=format:"%an , %ad : %s" --date=local --name-status>$TEMP_FILE
 	pull_request
+	#worked
 	# replace tab to ;
 	##cat $TEMP_FILE | tr "	" ";" >$GIT_LOG_FILE 
 }
