@@ -1,3 +1,30 @@
+PavithraRajendran99 , Wed Mar 17 17:46:41 2021 : Delete GIT_LOG_REPORT.txt
+D	GIT_LOG_REPORT.txt
+
+PavithraRajendran99 , Wed Mar 17 17:46:21 2021 : Delete SPINIRCLE_REPORT.csv
+D	SPINIRCLE_REPORT.csv
+
+PavithraRajendran99 , Wed Mar 17 17:44:37 2021 : Delete audit-all.sh
+D	audit-all.sh
+
+PavithraRajendran99 , Wed Mar 17 17:40:19 2021 : csv file removed
+M	git-report.sh
+
+PavithraRajendran99 , Wed Mar 17 17:05:11 2021 : one text file comment statement is removed
+M	git-report.sh
+
+PavithraRajendran99 , Wed Mar 17 16:32:06 2021 : changes made in shell script
+M	git-report.sh
+
+PavithraRajendran99 , Wed Mar 17 16:26:07 2021 : Update GIT_LOG_REPORT.txt
+M	GIT_LOG_REPORT.txt
+
+PavithraRajendran99 , Wed Mar 17 16:25:25 2021 : Update SPINIRCLE_REPORT.csv
+M	SPINIRCLE_REPORT.csv
+
+PavithraRajendran99 , Wed Mar 17 16:25:19 2021 : Update TEMP_REPORT.txt
+M	TEMP_REPORT.txt
+
 PavithraRajendran99 , Wed Mar 17 16:22:01 2021 : Create GIT_LOG_REPORT.txt
 A	GIT_LOG_REPORT.txt
 
