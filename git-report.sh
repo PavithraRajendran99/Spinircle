@@ -86,7 +86,7 @@ generate_lines() {
 		else
 			printf "$CONTENT;$FORMATTED_LINE;\n" >> $CSV_FILE
 		fi
-	done < $GIT_LOG_FILE
+	done < $TEMP_FILE
 }
 
 remove_files() {
