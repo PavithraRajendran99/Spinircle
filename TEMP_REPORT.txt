@@ -1,3 +1,12 @@
+PavithraRajendran99 , Wed Mar 17 17:55:26 2021 : Update TEMP_REPORT.txt
+M	TEMP_REPORT.txt
+
+PavithraRajendran99 , Wed Mar 17 17:55:22 2021 : Create SPINIRCLE_REPORT.csv
+A	SPINIRCLE_REPORT.csv
+
+PavithraRajendran99 , Wed Mar 17 17:55:16 2021 : Update git-report.sh
+M	git-report.sh
+
 PavithraRajendran99 , Wed Mar 17 17:52:53 2021 : Merge branch 'master' of https://github.com/PavithraRajendran99/Spinircle
 PavithraRajendran99 , Wed Mar 17 17:52:46 2021 : Update TEMP_REPORT.txt
 M	TEMP_REPORT.txt
