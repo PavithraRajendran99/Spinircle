@@ -1,3 +1,10 @@
+PavithraRajendran99 , Wed Mar 17 17:52:53 2021 : Merge branch 'master' of https://github.com/PavithraRajendran99/Spinircle
+PavithraRajendran99 , Wed Mar 17 17:52:46 2021 : Update TEMP_REPORT.txt
+M	TEMP_REPORT.txt
+
+Vitthi , Wed Mar 17 17:52:24 2021 : Retrieving csv file
+M	git-report.sh
+
 PavithraRajendran99 , Wed Mar 17 17:46:41 2021 : Delete GIT_LOG_REPORT.txt
 D	GIT_LOG_REPORT.txt
 
