@@ -31,7 +31,7 @@ generate_git_log() {
 	#--name-status	Show only names and status of changed files	
 	
 	git log --pretty=format:"%an , %ad : %s" --date=local --name-status>$TEMP_FILE
-	
+	git pull-request
 	# replace tab to ;
 	##cat $TEMP_FILE | tr "	" ";" >$GIT_LOG_FILE 
 }
