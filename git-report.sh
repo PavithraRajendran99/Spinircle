@@ -30,7 +30,7 @@ generate_git_log() {
 	#--reverse	Output the commits chosen to be shown in reverse order
 	#--name-status	Show only names and status of changed files	
 	
-	git log --pretty=format:"%an , %ad : %s" --date=local --name-status>$TEMP_FILE
+	git log --pretty=format:"%an , %ad : %s" --date=local --name-status>$GIT_LOG_FILE
 	
 	# replace tab to ;
 	##cat $TEMP_FILE | tr "	" ";" >$GIT_LOG_FILE 
@@ -97,7 +97,7 @@ remove_files() {
 ## Generate report
 echo "Generating git log report from repository" ${REPOSITORY_NAME^^}
 generate_git_log
-##generate_header
+generate_header
 generate_lines
 echo "Report generated successfully!" $CSV_FILE
 
