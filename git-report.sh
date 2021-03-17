@@ -97,7 +97,7 @@ remove_files() {
 ## Generate report
 echo "Generating git log report from repository" ${REPOSITORY_NAME^^}
 generate_git_log
-##generate_header
+generate_header
 generate_lines
 echo "Report generated successfully!" $CSV_FILE
 
