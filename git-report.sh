@@ -33,7 +33,7 @@ generate_git_log() {
 	git log --pretty=format:"%an , %ad : %s" --date=local --name-status>$TEMP_FILE
 	
 	# replace tab to ;
-	cat $TEMP_FILE | tr "	" ";" >$GIT_LOG_FILE 
+	##cat $TEMP_FILE | tr "	" ";" >$GIT_LOG_FILE 
 }
 
 generate_header() {
@@ -97,8 +97,8 @@ remove_files() {
 ## Generate report
 echo "Generating git log report from repository" ${REPOSITORY_NAME^^}
 generate_git_log
-generate_header
-generate_lines
+##generate_header
+##generate_lines
 echo "Report generated successfully!" $CSV_FILE
 
 ##remove_files
