@@ -11,7 +11,7 @@ clear
 ## File definitions
 REPOSITORY_NAME=`dirs|awk -F"/" '{print $NF}'`
 TEMP_FILE=TEMP_REPORT.txt
-GIT_LOG_FILE=GIT_LOG_REPORT.txt
+##GIT_LOG_FILE=GIT_LOG_REPORT.txt
 CSV_FILE=${REPOSITORY_NAME^^}_REPORT.csv
 # first line of csv file
 HEADER="Name;Date&Time;Comment;Status;File;Info;\n"
@@ -33,7 +33,7 @@ generate_git_log() {
 	git log --pretty=format:"%an , %ad : %s" --date=local --name-status> $TEMP_FILE
 	
 	# replace tab to ;
-	cat $TEMP_FILE | tr "	" ";" > $GIT_LOG_FILE
+	##cat $TEMP_FILE | tr "	" ";" > $GIT_LOG_FILE
 }
 
 generate_header() {
@@ -91,7 +91,7 @@ generate_lines() {
 
 remove_files() {
 	rm $TEMP_FILE
-	rm $GIT_LOG_FILE
+	##rm $GIT_LOG_FILE
 }
 
 ## Generate report
